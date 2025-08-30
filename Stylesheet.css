@@ -1,0 +1,48 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Hide views by default, jQuery will show the correct one */
+.main-view {
+    display: none;
+}
+
+/* Style for required form fields */
+.form-control:required:invalid {
+    border-color: #ced4da; /* Start with default color */
+}
+
+.form-control:required:valid {
+    border-color: #198754;
+}
+
+.was-validated .form-control:invalid {
+    border-color: #dc3545;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+.table-hover tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+#notification {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 1050;
+}
